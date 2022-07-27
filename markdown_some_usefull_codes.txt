@@ -1,0 +1,33 @@
+
+
+<span style="color:yellow;">  </span>
+<span style="color:yellow;">  </span>
+
+
+```{r} ```
+```{r} ```
+
+
+
+{.tabset .tabset-pills}
+{.tabset .tabset-pills}
+
+
+
+
+::: {.verbatim data-latex="" style="color: red;"}
+java -version
+:::
+::: {.verbatim data-latex="" style="color: red;"}
+java -version
+:::
+
+
+![FIGURE 1.1: check to see if Java is installed.](images/1java-version-cmd.png)
+![FIGURE 1.1: check to see if Java is installed.](images/1java-version-cmd.png)
+
+
+
+ [www.r-bloggers.com](https://www.r-bloggers.com/2020/01/working-with-windows-cmd-system-commands-in-r/)
+ [www.r-bloggers.com](https://www.r-bloggers.com/2020/01/working-with-windows-cmd-system-commands-in-r/)
+ 
