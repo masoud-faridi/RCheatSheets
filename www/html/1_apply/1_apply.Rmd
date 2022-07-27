@@ -386,6 +386,40 @@ sapply(1:2, function(i) {sapply(1:3,function(j) i+j)})
 
 ```
 
+
+#### <span style="color:orange"> Multiply </span>
+
+$$
+\prod_{i=1}^{2} \prod_{j=1}^3 (x_i - y_iz_j)
+$$
+```{r}
+x<-1:3
+y<-2:4
+z<-1:2
+pr<-1
+for(i in 1:length(x)){for(j in 1:length(z)){pr<-pr*(x[i]-y[i]*z[j])}}
+pr
+```
+```{r}
+x<-1:3
+y<-2:4
+z<-1:2
+pr<-1
+for(i in 1:length(x)){pr<-pr*prod(x[i]-y[i]*z)}
+pr
+```
+
+```{r}
+x<-1:3
+y<-2:4
+z<-1:2
+prod(unlist(lapply(1:length(x), function(i) prod(x[i]-y[i]*z))))
+```
+
+
+
+
+
 ###  sapply()
 
 ```{r}
