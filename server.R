@@ -42,7 +42,31 @@ shinyServer(function(input, output,session) {
     
   })
   
-  
+  output$user_p <- renderUser({
+    dashboardUser(
+      name = "Masoud Faridi", 
+      image = "https://i.ibb.co/47NGj4n/mf.jpg", 
+      title = "shinydashboardPlus",
+      subtitle = "Author", 
+      footer = p("The footer", class = "text-center"),
+      fluidRow(
+        dashboardUserItem(
+          width = 6,
+          socialButton(
+            href = "https://dropbox.com",
+            icon = icon("dropbox")
+          )
+        ),
+        dashboardUserItem(
+          width = 6,
+          socialButton(
+            href = "https://github.com",
+            icon = icon("github")
+          )
+        )
+      )
+    )
+  })
   
   
   

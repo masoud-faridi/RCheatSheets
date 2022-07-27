@@ -19,7 +19,7 @@ library(shiny)
 # (1) dashboardHeader start
 ########################
 header <- dashboardHeader(
-  title = ' Data Manipulation in R using packages',
+  title = 'Data Manipulation in R using packages',
   #tags$li(class = "dropdown",
   #        tags$a(href="https://www.cybersec.ir/", target="_blank", 
   #               tags$img(height = "20px", alt="cybersec", src="icons\\icon_1_fanavaran.png")          )
@@ -30,7 +30,8 @@ header <- dashboardHeader(
   #),
   notificationUI_dropdownMenu('notificationUI'),
   messageUI_dropdownMenu('messageUI'),
-  taskItemUI_dropdownMenu('taskItemUI')
+  taskItemUI_dropdownMenu('taskItemUI'),
+  userOutput("user_p")
   
    )
   
@@ -162,6 +163,12 @@ body <-dashboardBody( tabItems(
  
   #tabItem(tabName =  ui_global_variable$mI_1_1$ID, mf_modules_mI_1_1_uiOutput_db_searchDB_UI("mI_1_1_uiOutput_modules"))
   #uiOutput("mI_1_1_uiOutput"))
+  
+  tabItem(tabName = "menuItem_1_1_tabName",
+          fluidPage(
+            htmltools::tags$iframe(src = "html\\1_apply\\1_apply.html", width = '100%',  height = 1000,  style = "border:none;"))
+  )
+  
   
   
   
